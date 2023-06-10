@@ -215,7 +215,7 @@ body {
 .style-card{
 	border: #1D95AF solid 2px;
     padding-left: 2px;
-    margin-left: 36px;
+    /* margin-left: 36px; */
     border-radius: 10px;
     width: 27% !important;
     /* height: 50px; */
@@ -223,6 +223,10 @@ body {
     font-size: 20px;
 	margin-top: 10px !important;
 
+}
+.style-card1{
+	margin-left: 5rem ;
+	
 }
 .style-card p{
 	text-align: center;
@@ -271,6 +275,16 @@ footer {
     color:#222;
 }
 
+@media all and (max-width:320px){
+	/*.style-card{
+		width: 27% !important;
+
+	}*/
+	.style-card1{
+		margin-left: 0rem;
+	}
+}
+
 
 @media (max-width: 992px) {
 	.carousel-style {
@@ -283,7 +297,7 @@ footer {
 	.style-card {
     border: #1D95AF solid 2px;
     padding-left: 2px;
-    margin-left: -27px;
+    /* margin-left: -27px; */
     border-radius: 10px;
     width:100% !important;
     /* height: 50px; */
@@ -299,9 +313,9 @@ footer {
         margin-bottom: 30px;
     }
     
-    footer {
+    /* footer {
         height: 1187px;
-    }
+    } */
     .Contact-us-image-holder {
         display: none;
     }
@@ -309,6 +323,10 @@ footer {
         text-align: center;
         margin-bottom: 40px;
     }
+	.style-card1{
+		margin-left: 0rem;
+	}
+	
 }
 			
 		@media all and (max-width:992px) { 
@@ -354,7 +372,16 @@ footer {
 			.nav-item {
 				border-bottom: 1px solid #eaeaea;
 			}
+			.style-card1{
+		margin-left: 0rem;
+	}
+	
 		}
+	
+		body{
+	background-image: linear-gradient(to bottom right, #0056ab , #fff);
+	min-height: 100vh;
+}	
 		
 	</style>
 	<link rel="stylesheet" href="./css/slick.css">
@@ -483,22 +510,43 @@ footer {
 				
 
 			<br><br><br><br>
+
 			<div class="container" id="services">
 				<div class="col-12" style="text-align: center;">
-					<h2 class="color-1">Our Services</h2>
+					<h3 class="color-1">Our Services</h3>
 					<!-- <h4 class="">Lorem Ipsum is simply dummy text</h4> -->
 				</div>
-				<div class="row" style="margin-top: 65px; margin-left: 68px;">
-					<div data-aos="fade-in" class="animate__animated animate__bounce col-md-2 style-card" ><p>Social Insurance</p></div>
-					<div data-aos="flip-down" class="animate__animated animate__bounce col-md-3 style-card" ><p>Manpower and Foreign</p></div>
-					<div data-aos="fade-up-left" class="animate__animated animate__bounce col-md-3 style-card" ><p>Labor Affairs</p></div>
-					<!-- <div data-aos="fade-in" class="animate__animated animate__bounce col-md-3 style-card" ><p>Proserv Training Academy</p></div> -->
-					<div data-aos="ease-in-out-quart" class="animate__animated animate__bounce col-md-3 style-card"><p>Legal Services</p></div>
-					<div data-aos="fade-in" class="animate__animated animate__bounce col-md-3 style-card" ><p>Outsourcing</p></div>
-					<div data-aos="ease-in-out-quart" class="animate__animated animate__bounce col-md-3 style-card"><p>Recruitment</p></div>
-					<!-- <div data-aos="fade-in" class="animate__animated animate__bounce col-md-3 style-card"><p>HR Systems & Procedures</p></div>
-					<div data-aos="fade-up-left" class="animate__animated animate__bounce col-md-3 style-card" ><p>Accounting Services</p></div> -->
+				
+					<div class="row">
+							
+						<div data-aos="fade-in" class="animate__animated animate__bounce col-md-5 style-card style-card1" >
+							<p style="color: #592173; font-size: x-large;">Labor Affairs</p>
+							<div style="text-align: center;">Everything related to business and workers starting with workers, facility and ending with terminating the business contracts in compliance with law.</div>
+						
+						</div>
+							
+						<div data-aos="fade-up-left" class="animate__animated animate__bounce col-md-5 style-card style-card1"  >
+								<p style="color: #592173; font-size: x-large;">Outsourcing</p>
+								<div style="text-align: center;">Doing everything related to the worker after taking on his job holding full legal responsibility according to business contract such as social insurance, worker's file, opening a bank account and transferring of salaries.</div>
+						</div>
+	
 
+					</div>
+
+					<div class="row">
+						<div data-aos="flip-down" class="animate__animated animate__bounce col-md-4  style-card" >
+							<p style="color: #592173; font-size: x-large;">Social insurance:</p>
+							<div style="text-align: center;">Everything related to social insurance files for companies and individuals.</div>
+						</div>	
+					
+						<div data-aos="ease-in-out-quart" class="animate__animated animate__bounce col-md-4 style-card">
+							<p style="color: #592173; font-size: x-large;">Local and foreign manpower</p>
+							<div style="text-align: center;">Following foreign manpower procedures in compliance with law.</div>
+						</div>
+						<div data-aos="fade-in" class="animate__animated animate__bounce  col-md-4 style-card" >
+							<p style="color: #592173; font-size: x-large;">Legal services</p>
+							<div style="text-align: center;">Writing and revising all kinds of business contracts and ensuring its compliancy with law.</div>
+						</div> 
 				</div>
 			</div>
 			
@@ -620,9 +668,20 @@ footer {
 									  
 									</li>
 
+									<li><a href="https://www.facebook.com/profile.php?id=100083466334043&mibextid=ZbWKwL">
+										<span class="fas fa-phone" aria-hidden="true" ></span>
+										<p style="font-size: 15px;">Facebook</p></a>
+									</li>
+
 									<li><a href="tel:01100103109">
 									  <span class="fas fa-phone" aria-hidden="true" ></span>
-									  <p style="font-size: 15px;">01100103109</p></a></li>
+									  <p style="font-size: 15px;">01100103109</p></a>
+									</li>
+
+									<li><a href="tel:01100103109">
+										<span class="fas fa-phone" aria-hidden="true" ></span>
+										<p style="font-size: 15px;">01050050002</p></a>
+									</li>
 								  </ul>
 							  </div>
 							</div>
